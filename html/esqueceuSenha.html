@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Esqueceu a Senha</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/senha.css">
+    <link rel="stylesheet" href="../css/cssBase.css">
+    <link rel="stylesheet" href="../css/cores.css">
+</head>
+
+<body>
+    <header class="azulEscuro">
+        <div class="container-fluid flex">
+            <h1 class="branco">Techzone</h1>
+
+            <!-- Só vai aparecer para celular -->
+
+            <div class="d-flex" id="divTeste">
+                <a href="login.html" class="branco links">Entrar</a>
+                <a href="sobreNos.html" class="branco links" id="linkHeader">Sobre nós</a>
+            </div>
+
+            <!-- Fim ... -->
+
+            <div class="container-fluid flex" id="divHeaderDireita" style="--bs-breadcrumb-divider: '|';"
+                aria-label="breadcrumb">
+
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="login.html" class="branco links">Entrar</a>
+                    </li>
+
+                    <li class="breadcrumb-item">
+                        <a href="sobreNos.html" class="branco links" id="linkHeader">Sobre nós</a>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="d-flex justify-content-end align-items-center" id="divHeaderPerfil">
+                <a href="cadastro.html">
+                    <img src="../imagens/iconedePerfil.png" alt="" id="imgPerfil">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg nav-underline">
+        <div id="navContainer" class="container-fluid">
+
+            <div id="navLogo">
+                <a href="../index.html">
+                    <img src="../imagens/minhaLogo.png" alt="" id="imgLogo">
+                </a>
+            </div>
+
+            <div id="divNavMeio">
+                <a class="nav-link" aria-current="page" href="perifericos.html">Teclados</a>
+
+                <a class="nav-link" href="../index.html">Computadores</a>
+
+                <a class="nav-link" href="monitores.html">Monitores</a>
+            </div>
+
+            <!-- Vai aparecer somente para celular !!! -->
+
+            <div id="divSanduiche">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle branco btn-lg" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Menu
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="perifericos.html" class="dropdown-item">Teclados</a>
+                        </li>
+
+                        <li>
+                            <a href="../index.html" class="dropdown-item">Computadores</a>
+                        </li>
+
+                        <li>
+                            <a href="monitores.html" class="dropdown-item">Monitores</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Fim -->
+
+            <div id="divNavDireita" class="d-flex justify-content-end align-items-center">
+
+                <div class="azulEscuro d-flex justify-content-center branco" id="divContador">
+                    <p id="contador">0</p>
+                </div>
+
+                <a href="carrinho.html">
+                    <img src="../imagens/carrinho.png" alt="" id="imgCarrinho">
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="container-md rounded-4" id="divlogin">
+            <h2 class="d-flex justify-content-center">Redefinir senha</h2>
+
+            <form>
+                <div class="mb-3">
+                    <form action="">
+                        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </form>
+                </div>
+
+                <div class="mb-3">
+                    <form action="">
+                        <label for="exampleInputPassword1" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senha" placeholder="Digite sua nova senha">
+                    </form>
+
+                    <div id="divOlho">
+                        <button type="button" class="btn border-0" id="botaoOlho" onclick="alterarSenha()">
+                            <i class="bi bi-eye-slash"></i>
+                        </button>
+                    </div>
+
+                    <form action="">
+                        <label for="exampleInputPassword1" class="form-label" id="labelSenha">Confirmar senha</label>
+                        <input type="password" class="form-control" id="senha2" placeholder="Confirme sua senha">
+                    </form>
+
+                    <div id="divOlho">
+                        <button type="button" class="btn border-0" id="botaoOlho" onclick="alterarSenha2()">
+                            <i class="bi bi-eye-slash"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="divBotaologin">
+                    <button type="submit" class="btn rounded-5" id="botaologin">
+                        <a href="login.html" class="linkSemLinha">Confirmar</a>
+                    </button>
+                </div>
+
+                <div id="divBaixo">
+
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="d-flex" id="divPrincipalFooter">
+            <div class="divFooter">
+                <h4>
+                    <b>Contatos:</b>
+                </h4>
+
+                <p>Telefone: (11) 4002-8922</p>
+
+                <p>WhatsApp: (11) 98888-7777</p>
+
+                <p>E-mail: contato@techzone.com</p>
+            </div>
+
+            <div class="divFooter">
+                <h4>
+                    <b>Links:</b>
+                </h4>
+
+                <p>
+                    <a href="../index.html">Home</a>
+                </p>
+
+                <p>
+                    <a href="faleConosco.html">Fale conosco</a>
+                </p>
+
+                <p>
+                    <a href="cadastro.html">Dados da conta</a>
+                </p>
+            </div>
+
+            <div class="divFooter">
+                <h4>
+                    <b>Localização:</b>
+                </h4>
+
+                <p>Endereço: Rua da Inovação, 1234</p>
+
+                <p>Centro, São Paulo - SP</p>
+
+                <p>CEP: 01000-000</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INICIO BOOTSTRAP -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <!-- FINAL BOOTSTRAP -->
+
+    <!-- TROCAR PASSWORD PARA TEXTO -->
+
+    <script>
+        function alterarSenha() {
+            var senha = document.getElementById("senha").type;
+
+            if (senha == "password") {
+                document.getElementById("senha").type = "text";
+
+            } else {
+                document.getElementById("senha").type = "password";
+            }
+        }
+
+        function alterarSenha2() {
+            var senha2 = document.getElementById("senha2").type;
+
+            if (senha2 == "password") {
+                document.getElementById("senha2").type = "text";
+
+            } else {
+                document.getElementById("senha2").type = "password";
+            }
+        }
+    </script>
+</body>
+
+</html>

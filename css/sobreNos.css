@@ -1,0 +1,204 @@
+@media screen and (orientation: landscape) {
+    .divMain {
+        display: inline-block;
+        width: 49%;
+        margin-left: 5px;
+    }
+
+    .divMain p {
+        margin-left: 10vw;
+        font-size: 20px;
+    }
+
+    .divTexto {
+        width: 40vw;
+        margin-top: 30px;
+        text-align: left;
+        text-shadow: 3px 3px 2px black;
+    }
+
+    .divMain h1 {
+        margin-top: 3vw;
+    }
+
+    .divImagens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main img {
+        width: 30vw;
+        height: 25vw;
+        border: 1px solid black;
+        margin-top: 3vw;
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+    main img:hover {
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .botaoEsquerda {
+        width: 70px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 0;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .botaoEsquerda:hover {
+        background-color: rgb(206, 205, 205);
+    }
+
+    .botaoDireita {
+        width: 70px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        border: 0;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .botaoDireita:hover {
+        background-color: rgb(206, 205, 205);
+    }
+}
+
+/* TELA EM PÉ */
+
+@media screen and (orientation: portrait) {
+
+    .divMain {
+        display: block;
+    }
+
+    .divMain h1 {
+        margin-top: 5vh;
+    }
+
+    main img {
+        width: 50vw;
+        height: 45vw;
+        border: 1px solid black;
+        margin-top: 3vw;
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+    main img:hover {
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .divMain p {
+        font-size: 20px;
+    }
+
+    .divTexto {
+        text-align: center;
+        margin-top: 50px;
+        text-align: left;
+        width: 50vw;
+        text-shadow: 3px 3px 2px black;
+    }
+
+    .divCentro {
+        display: flex;
+        justify-content: center;
+    }
+
+    .botaoEsquerda {
+        width: 70px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 0;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .botaoEsquerda:hover {
+        background-color: rgb(206, 205, 205);
+    }
+
+    .botaoDireita {
+        width: 70px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        border: 0;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .botaoDireita:hover {
+        background-color: rgb(206, 205, 205);
+    }
+}
+
+@media screen and (max-width: 530px) {
+    main {
+        width: 110%;
+    }
+
+    .divMain {
+        display: block;
+    }
+
+    .divMain h1 {
+        margin-top: 5vh;
+    }
+
+    main img {
+        width: 60vw;
+        height: 55vw;
+        border: 1px solid black;
+        margin-top: 3vw;
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+    main img:hover {
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .divMain p {
+        font-size: 20px;
+    }
+
+    .divTexto {
+        text-align: center;
+        margin-top: 50px;
+        text-align: left;
+        width: 50vw;
+        text-shadow: 3px 3px 2px black;
+    }
+    
+    .divCentro {
+        display: flex;
+        justify-content: center;
+    }
+
+    .botaoEsquerda {
+        width: 70px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 0;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .botaoEsquerda:hover {
+        background-color: rgb(206, 205, 205);
+    }
+
+    .botaoDireita {
+        width: 70px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        border: 0;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .botaoDireita:hover {
+        background-color: rgb(206, 205, 205);
+    }
+}

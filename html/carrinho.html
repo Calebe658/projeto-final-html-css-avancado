@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carrinho</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="../css/cssBase.css" />
+  <link rel="stylesheet" href="../css/cores.css" />
+  <link rel="stylesheet" href="../css/carrinho.css" />
+</head>
+
+<body>
+  <header class="azulEscuro">
+    <div class="container-fluid flex">
+      <h1 class="branco">Techzone</h1>
+
+      <!-- Só vai aparecer para celular -->
+
+      <div class="d-flex" id="divTeste">
+        <a href="login.html" class="branco links">Entrar</a>
+        <a href="sobreNos.html" class="branco links" id="linkHeader">Sobre nós</a>
+      </div>
+
+      <!-- Fim ... -->
+
+      <div class="container-fluid flex" id="divHeaderDireita" style="--bs-breadcrumb-divider: '|'"
+        aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="login.html" class="branco links">Entrar</a>
+          </li>
+
+          <li class="breadcrumb-item">
+            <a href="sobreNos.html" class="branco links" id="linkHeader">Sobre nós</a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="d-flex justify-content-end align-items-center" id="divHeaderPerfil">
+        <a href="cadastro.html">
+          <img src="../imagens/iconedePerfil.png" alt="" id="imgPerfil" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg nav-underline azulClaro">
+    <div id="navContainer" class="container-fluid">
+      <div id="navLogo">
+        <a href="../index.html">
+          <img src="../imagens/minhaLogo.png" alt="" id="imgLogo" />
+        </a>
+      </div>
+
+      <div id="divNavMeio">
+        <a class="nav-link" aria-current="page" href="perifericos.html">Teclados</a>
+
+        <a class="nav-link" href="../index.html">Computadores</a>
+
+        <a class="nav-link" href="monitores.html">Monitores</a>
+      </div>
+
+      <!-- Vai aparecer somente para celular !!! -->
+
+      <div id="divSanduiche">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle branco btn-lg" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Menu
+          </button>
+
+          <ul class="dropdown-menu">
+            <li>
+              <a href="perifericos.html" class="dropdown-item">Teclados</a>
+            </li>
+
+            <li>
+              <a href="../index.html" class="dropdown-item">Computadores</a>
+            </li>
+
+            <li>
+              <a href="monitores.html" class="dropdown-item">Monitores</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Fim -->
+
+      <div id="divNavDireita" class="d-flex justify-content-end align-items-center">
+        <div class="azulEscuro d-flex justify-content-center branco" id="divContador">
+          <p id="contador">0</p>
+        </div>
+
+        <a href="carrinho.html">
+          <img src="../imagens/carrinho.png" alt="" id="imgCarrinho" />
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="azulEscuro">
+    <div class="container-fluid branco d-flex justify-content-center" id="areaCarrinho">
+      <h1>Meu Carrinho</h1>
+    </div>
+
+    <table class="table table-bordered table-hover table-responsive table-striped table-primary">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome:</th>
+          <th scope="col">Valor:</th>
+          <th scope="col">Remover:</th>
+        </tr>
+      </thead>
+
+      <tbody id="tbody"></tbody>
+    </table>
+  </main>
+
+  <footer>
+    <div class="d-flex" id="divPrincipalFooter">
+      <div class="divFooter">
+        <h4>
+          <b>Contatos:</b>
+        </h4>
+
+        <p>Telefone: (11) 4002-8922</p>
+
+        <p>WhatsApp: (11) 98888-7777</p>
+
+        <p>E-mail: contato@techzone.com</p>
+      </div>
+
+      <div class="divFooter">
+        <h4>
+          <b>Links:</b>
+        </h4>
+
+        <p>
+          <a href="../index.html">Home</a>
+        </p>
+
+        <p>
+          <a href="faleConosco.html">Fale conosco</a>
+        </p>
+
+        <p>
+          <a href="cadastro.html">Dados da conta</a>
+        </p>
+      </div>
+
+      <div class="divFooter">
+        <h4>
+          <b>Localização:</b>
+        </h4>
+
+        <p>Endereço: Rua da Inovação, 1234</p>
+
+        <p>Centro, São Paulo - SP</p>
+
+        <p>CEP: 01000-000</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INICIO BOOTSTRAP -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- FINAL BOOTSTRAP -->
+
+  <script>
+    function carregarCarrinho(numero) {
+      var descricao = localStorage.getItem("descricao" + numero);
+      var preco = localStorage.getItem("preco" + numero);
+
+      if (descricao != null && preco != null) {
+        document.getElementById("tbody").innerHTML +=
+          '<tr id="produto' +
+          numero +
+          '"> <th scope="row">-</th> <td> <p id="carrinho">' +
+          descricao +
+          '</p> </td> <td> <p id="total">' +
+          preco +
+          '</p> </td> <td> <button class="btn border-0 rounded-3 fundoVermelho branco" onclick="removerProduto(' +
+          numero +
+          ')"> Remover Produto </button> </td> </tr>';
+      }
+    }
+
+    function removerProduto(numero) {
+      var produto = document.getElementById("produto" + numero);
+
+      if (produto) {
+        produto.remove();
+      }
+
+      localStorage.removeItem("descricao" + numero);
+      localStorage.removeItem("preco" + numero);
+    }
+
+    for (var i = 1; i <= 30; i++) {
+      carregarCarrinho(i);
+    }
+  </script>
+</body>
+
+</html>

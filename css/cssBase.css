@@ -1,0 +1,448 @@
+/* TELA DE PC */
+
+@media screen and (min-width: 801px) {
+
+    /* DEFINIÇÕES DO HEADER */
+    #divTeste a {
+        display: none;
+        /* ESSA DIV ESTÁ INVISÍVEL */
+    }
+
+    div h1 {
+        margin-top: 5px;
+    }
+
+    #divHeaderDireita {
+        align-items: end;
+        justify-content: end;
+    }
+
+    header a {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+
+    #imgPerfil {
+        width: 60px;
+        height: 60px;
+        margin-right: -10px;
+    }
+
+    /* DEFINIÇÕES DA NAV */
+    #divSanduiche {
+        display: none;
+        /* ESSA DIV ESTÁ INVISÍVEL */
+    }
+
+    #divNavMeio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #divNavMeio a {
+        color: white;
+        font-size: 30px;
+        white-space: nowrap;
+        margin-left: 20px;
+    }
+
+    #divNavMeio a:hover {
+        background-color: rgb(26, 72, 112);
+        transition: 1.5s;
+        border-radius: 5px;
+    }
+
+    #divNavDireita {
+        justify-content: end;
+    }
+
+    #divNavDireita a {
+        color: white;
+    }
+
+    #divContador {
+        border-radius: 50%;
+        width: 30px;
+        margin-top: -30px;
+        height: 30px;
+    }
+
+    #imgCarrinho {
+        width: 100px;
+        height: 100px;
+        margin-right: -10px;
+    }
+
+    #imgLogo {
+        width: 90px;
+        height: 80px;
+    }
+
+    #navContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    /* DEFINIÇÕES FOOTER */
+
+    .divFooter p,
+    a {
+        color: white;
+    }
+
+    #divPrincipalFooter {
+        justify-content: space-around;
+    }
+
+    footer {
+        background-color: rgb(91, 153, 194);
+    }
+}
+
+/* TELA TABLET */
+@media screen and (min-width: 531px) and (max-width: 800px) {
+
+    /* DEFINIÇÕES DO HEADER */
+
+    #divTeste a {
+        display: none;
+        /* ESSA DIV ESTÁ INVISÍVEL */
+    }
+
+    div h1 {
+        margin-top: 10px;
+    }
+
+    #divHeaderDireita {
+        justify-content: end;
+        align-items: end;
+    }
+
+    li a {
+        font-size: 20px;
+    }
+
+    #imgPerfil {
+        width: 60px;
+        height: 60px;
+        margin-right: -10px;
+    }
+
+    /* DEFINIÇÕES DA NAV */
+
+    #divNavMeio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 60vw;
+        display: none;
+    }
+
+    #divSanduiche {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #divNavMeio a {
+        color: white;
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    #divNavMeio a:hover {
+        background-color: rgb(26, 72, 112);
+        transition: 1.5s;
+        border-radius: 5px;
+    }
+
+    #divNavDireita {
+        justify-content: end;
+    }
+
+    #divNavDireita a {
+        color: white;
+    }
+
+    #divContador {
+        border-radius: 50%;
+        width: 25px;
+        margin-top: -30px;
+        height: 25px;
+    }
+
+    #imgCarrinho {
+        width: 10vw;
+        height: 9vw;
+        margin-top: -5px;
+        margin-right: -10px;
+    }
+
+    #imgLogo {
+        width: 8vw;
+        height: 7vw;
+    }
+
+    /* DEFINIÇÕES FOOTER */
+
+    .divFooter p,
+    a {
+        color: white;
+    }
+
+    #divPrincipalFooter {
+        justify-content: space-around;
+    }
+
+    footer {
+        background-color: rgb(91, 153, 194);
+    }
+}
+
+/* TELA CELULAR */
+
+@media screen and (min-width: 376px) and (max-width: 530px) {
+
+    /* DEFINIÇÕES DO HEADER */
+
+    header {
+        width: 110vw;
+    }
+
+    #divTeste {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20vw;
+        margin-top: 5px;
+        white-space: nowrap;
+    }
+
+    div h1 {
+        margin-top: 15px;
+    }
+
+    #divHeaderDireita {
+        justify-content: end;
+        align-items: end;
+        display: none;
+        /* ESSA DIV ESTÁ INVISÍVEL */
+    }
+
+    li a {
+        font-size: 18px;
+    }
+
+    #divHeaderPerfil {
+        width: 70vw;
+    }
+
+    #imgPerfil {
+        width: 60px;
+        height: 60px;
+        margin-right: -10px;
+    }
+
+    /* DEFINIÇÕES DA NAV */
+    nav {
+        width: 110vw;
+    }
+
+    #divNavMeio {
+        display: none;
+        /* ESSA DIV ESTÁ INVISÍVEL */
+        flex-direction: row;
+        justify-content: center;
+        width: 60vw;
+    }
+
+    #divNavMeio a {
+        color: white;
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    #divNavMeio a:hover {
+        background-color: rgb(26, 72, 112);
+        transition: 1.5s;
+        border-radius: 5px;
+    }
+
+    #divNavDireita {
+        justify-content: end;
+        margin-right: -7px;
+    }
+
+    #divNavDireita a {
+        color: white;
+    }
+
+    #divContador {
+        border-radius: 50%;
+        width: 20px;
+        margin-top: -30px;
+        height: 25px;
+    }
+
+    #imgCarrinho {
+        width: 10vw;
+        height: 9vw;
+        margin-top: -5px;
+    }
+
+    #imgLogo {
+        width: 8vw;
+        height: 7vw;
+    }
+
+    main {
+        width: 110vw;
+    }
+
+    /* DEFINIÇÕES FOOTER */
+
+    .divFooter p,
+    a {
+        color: white;
+        font-size: small;
+    }
+
+    #divPrincipalFooter {
+        width: 110vw;
+        justify-content: space-between;
+    }
+
+    .divFooter {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        background-color: rgb(91, 153, 194);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* DEFINIÇÕES DO HEADER */
+
+    header {
+        width: 110vw;
+    }
+
+    #divTeste {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 18vw;
+        margin-top: 5px;
+        white-space: nowrap;
+    }
+
+    div h1 {
+        margin-top: 15px;
+    }
+
+    #divHeaderDireita {
+        justify-content: end;
+        align-items: end;
+        display: none;
+        /* ESSA DIV ESTÁ INVISÍVEL */
+    }
+
+    li a {
+        font-size: 18px;
+    }
+
+    #divHeaderPerfil {
+        width: 70vw;
+    }
+
+    #imgPerfil {
+        width: 60px;
+        height: 60px;
+        margin-right: -14px;
+    }
+
+    /* DEFINIÇÕES DA NAV */
+    nav {
+        width: 110vw;
+    }
+
+    #divNavMeio {
+        display: none;
+        /* ESSA DIV ESTÁ INVISÍVEL */
+        flex-direction: row;
+        justify-content: center;
+        width: 60vw;
+    }
+
+    #divNavMeio a {
+        color: white;
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    #divNavMeio a:hover {
+        background-color: rgb(26, 72, 112);
+        transition: 1.5s;
+        border-radius: 5px;
+    }
+
+    #divSanduiche {
+        margin-right: -14vw;
+    }
+
+    #divNavDireita {
+        justify-content: end;
+        margin-right: -8px;
+    }
+
+    #divNavDireita a {
+        color: white;
+    }
+
+    #divContador {
+        border-radius: 50%;
+        width: 20px;
+        margin-top: -30px;
+        height: 20px;
+    }
+
+    #imgCarrinho {
+        width: 12vw;
+        height: 11vw;
+
+    }
+
+    #navLogo {
+        margin-left: 5vw;
+    }
+
+    #imgLogo {
+        width: 10vw;
+        height: 8vw;
+    }
+
+    main {
+        width: 110vw;
+    }
+
+    /* DEFINIÇÕES FOOTER */
+
+    .divFooter p,
+    a {
+        color: white;
+        font-size: 10px;
+    }
+
+    #divPrincipalFooter {
+        width: 110vw;
+        justify-content: space-between;
+    }
+
+    .divFooter {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        background-color: rgb(91, 153, 194);
+    }
+}

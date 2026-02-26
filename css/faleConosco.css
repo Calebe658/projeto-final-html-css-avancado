@@ -1,0 +1,91 @@
+main {
+    width: 40vw;
+    margin-left: 30vw;
+    height: 760px;
+    margin-bottom: 50px;
+}
+
+.divSelect {
+    margin-top: 10px;
+}
+
+main label {
+    font-size: 20px;
+}
+
+.divSelect p {
+    font-size: 20px;
+}
+
+#teste {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#divBaixo {
+    margin-top: 30px;
+}
+
+#divBaixo p {
+    font-size: 30px;
+}
+
+#divBotaoEnviar {
+    margin-top: 20px;
+}
+
+#botaoEnviar {
+    width: 20vw;
+    background-color: rgb(217, 22, 86);
+    color: white;
+}
+
+#botaoEnviar:hover {
+    background-color: rgb(186, 19, 74);
+}
+
+input:hover {
+    background-color: rgb(206, 205, 205);
+}
+
+select:hover {
+    background-color: rgb(206, 205, 205);
+}
+
+@media screen and (min-width: 531px) and (max-width: 800px) {
+    main {
+        width: 60vw;
+        margin-left: 20vw;
+    }
+}
+
+@media screen and (min-width: 330px) and (max-width: 530px) {
+    main {
+        width: 60vw;
+        margin-left: 25vw;
+    }
+}
+
+@media screen and (min-width: 246px) and (max-width: 329px) {
+    main {
+        width: 80vw;
+        margin-left: 18vw;
+    }
+
+    #botaoEnviar {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 245px) {
+    main {
+        width: 110vw;
+        margin-left: 2vw;
+        height: 840px;
+    }
+
+    #botaoEnviar {
+        width: 50vw;
+    }
+    
+}

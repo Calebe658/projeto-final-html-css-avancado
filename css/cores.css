@@ -1,0 +1,27 @@
+/* CORES DO SITE */
+
+.azulClaro {
+    background-color: rgb(91, 153, 194);
+}
+
+.azulEscuro {
+    background-color: rgb(26, 72, 112);
+}
+
+.fundoVermelho {
+    background-color: rgb(217, 22, 86);
+}
+
+.vermelho {
+    color: rgb(217, 22, 86);
+}
+
+/* DIVERSOS */
+
+.branco {
+    color: white;
+}
+
+.flex {
+    display: flex;
+}

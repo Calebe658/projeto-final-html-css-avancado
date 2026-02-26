@@ -1,0 +1,221 @@
+@media screen and (min-width: 876px) {
+    body {
+        background-color: rgb(91, 153, 194);
+    }
+
+    #divlogin {
+        margin-top: 7vh;
+        width: 30vw;
+        background-color: rgb(26, 72, 112);
+        border: 1px solid rgb(26, 72, 112);
+        margin-bottom: 10vh;
+    }
+
+    h2 {
+        margin-top: 3vw;
+        color: white;
+        font-size: 40px;
+    }
+
+    #botaologin {
+        margin-top: 1vw;
+        width: 30vw;
+        background-color: rgb(217, 22, 86);
+        color: white;
+    }
+
+    #divBotaologin {
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        margin-top: 1vw;
+    }
+
+    a,
+    label {
+        color: white;
+        font-size: 20px;
+    }
+
+    input:hover {
+        background-color: rgb(206, 205, 205);
+    }
+
+    #divOlho {
+        display: flex;
+        justify-content: end;
+    }
+
+    #botaoOlho {
+        margin-top: -41px;
+    }
+
+    button i {
+        font-size: 20px;
+    }
+
+    .linkSemLinha {
+        text-decoration: none;
+    }
+
+    #labelSenha {
+        margin-top: 20px;
+    }
+
+    #divBaixo {
+        height: 2vw;
+    }
+}
+
+@media screen and (min-width: 531px) and (max-width: 875px) {
+    body {
+        background-color: rgb(91, 153, 194);
+    }
+
+    #divlogin {
+        margin-top: 7vh;
+        width: 60vw;
+        background-color: rgb(26, 72, 112);
+        border: 1px solid rgb(26, 72, 112);
+        margin-bottom: 10vh;
+    }
+
+    h2 {
+        margin-top: 3vw;
+        color: white;
+        font-size: 40px;
+    }
+
+    #botaologin {
+        margin-top: 1vw;
+        width: 30vw;
+        background-color: rgb(217, 22, 86);
+        color: white;
+    }
+
+    #divBotaologin {
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        margin-top: 3vw;
+    }
+
+    a,
+    label {
+        color: white;
+        font-size: 20px;
+    }
+
+    input:hover {
+        background-color: rgb(206, 205, 205);
+    }
+
+    #divOlho {
+        display: flex;
+        justify-content: end;
+    }
+
+    #botaoOlho {
+        margin-top: -41px;
+    }
+
+    button i {
+        font-size: 20px;
+    }
+
+    .linkSemLinha {
+        text-decoration: none;
+    }
+
+    #labelSenha {
+        margin-top: 20px;
+    }
+
+    #divBaixo {
+        height: 2vw;
+    }
+}
+
+/* TELA EM PÉ !!!!! */
+
+@media screen and (max-width: 530px) {
+    body {
+        background-color: rgb(91, 153, 194);
+    }
+
+    #divlogin {
+        margin-top: 8vh;
+        width: 70vw;
+        margin-left: 21vw;
+        background-color: rgb(26, 72, 112);
+        border: 1px solid rgb(26, 72, 112);
+        margin-bottom: 15vh;
+    }
+
+    h2 {
+        margin-top: 3vw;
+        color: white;
+        font-size: 40px;
+    }
+
+    #botaologin {
+        margin-top: 1vw;
+        width: 30vw;
+        background-color: rgb(217, 22, 86);
+        color: white;
+    }
+
+    #divBotaologin {
+        display: flex;
+        justify-content: center;
+    }
+
+    #divEsqueceuSenha {
+        display: flex;
+        justify-content: center;
+        margin-top: 1vw;
+    }
+
+    form {
+        margin-top: 5vw;
+    }
+
+    a,
+    label {
+        color: white;
+        font-size: 20px;
+    }
+
+    input:hover {
+        background-color: rgb(206, 205, 205);
+    }
+
+    #divOlho {
+        display: flex;
+        justify-content: end;
+    }
+
+    #botaoOlho {
+        margin-top: -42px;
+    }
+
+    button i {
+        font-size: 20px;
+    }
+
+    .linkSemLinha {
+        text-decoration: none;
+    }
+
+    #labelSenha {
+        margin-top: 20px;
+    }
+
+    #divBaixo {
+        height: 2vw;
+    }
+}

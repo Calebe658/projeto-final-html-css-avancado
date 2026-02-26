@@ -1,0 +1,76 @@
+div label {
+    color: white;
+    font-size: 18px;
+}
+
+input:hover {
+    background-color: rgb(206, 205, 205);
+}
+
+label {
+    white-space: nowrap;
+}
+
+select {
+    margin-top: 35px;
+    height: 38px;
+}
+
+select:hover {
+    background-color: rgb(206, 205, 205);
+}
+
+#tituloDados {
+    margin-bottom: 20px;
+}
+
+#tituloEndereco {
+    margin-top: 20px;
+}
+
+.divEndereco {
+    margin-top: 20px;
+}
+
+#divBotaoMain {
+    margin-top: 3vw;
+}
+
+#botaoLogin {
+    width: 30vw;
+    background-color: rgb(217, 22, 86);
+    color: white;
+}
+
+main {
+    width: 90vw;
+    margin-left: 5vw;
+    height: 950px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 530px) {
+    #divSelect {
+        margin-top: 70px;
+        margin-left: -90vw;
+    }
+
+    main {
+        margin-left: 10vw;
+    }
+
+    #divTelefone {
+        margin-top: 110px;
+        margin-left: -88vw;
+    }
+
+    #divComplemento {
+        margin-top: 100px;
+        margin-left: -90vw;
+    }
+
+    main {
+        height: 1150px;
+    }
+
+}

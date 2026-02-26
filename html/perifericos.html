@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teclados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/cssBase.css">
+    <link rel="stylesheet" href="../css/cores.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body class="azulClaro">
+
+    <header class="azulEscuro">
+        <div class="container-fluid flex">
+            <h1 class="branco">Techzone</h1>
+
+            <!-- Só vai aparecer para celular -->
+
+            <div class="d-flex" id="divTeste">
+                <a href="login.html" class="branco links">Entrar</a>
+                <a href="sobreNos.html" class="branco links" id="linkHeader">Sobre nós</a>
+            </div>
+
+            <!-- Fim ... -->
+
+            <div class="container-fluid flex" id="divHeaderDireita" style="--bs-breadcrumb-divider: '|';"
+                aria-label="breadcrumb">
+
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="login.html" class="branco links">Entrar</a>
+                    </li>
+
+                    <li class="breadcrumb-item">
+                        <a href="sobreNos.html" class="branco links" id="linkHeader">Sobre nós</a>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="d-flex justify-content-end align-items-center" id="divHeaderPerfil">
+                <a href="cadastro.html">
+                    <img src="../imagens/iconeDePerfil.PNG" alt="" id="imgPerfil">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg nav-underline">
+        <div id="navContainer" class="container-fluid">
+
+            <div id="navLogo">
+                <a href="../index.html">
+                    <img src="../imagens/minhaLogo.png" alt="" id="imgLogo">
+                </a>
+            </div>
+
+            <div id="divNavMeio">
+                <a class="nav-link" aria-current="page" href="perifericos.html">Teclados</a>
+
+                <a class="nav-link" href="../index.html">Computadores</a>
+
+                <a class="nav-link" href="monitores.html">Monitores</a>
+            </div>
+
+            <!-- Vai aparecer somente para celular !!! -->
+
+            <div id="divSanduiche">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle branco btn-lg" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Menu
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="perifericos.html" class="dropdown-item">Teclados</a>
+                        </li>
+
+                        <li>
+                            <a href="../index.html" class="dropdown-item">Computadores</a>
+                        </li>
+
+                        <li>
+                            <a href="monitores.html" class="dropdown-item">Monitores</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Fim -->
+
+            <div id="divNavDireita" class="d-flex justify-content-end align-items-center">
+
+                <div class="azulEscuro d-flex justify-content-center branco" id="divContador">
+                    <p id="contador">0</p>
+                </div>
+
+                <a href="carrinho.html">
+                    <img src="../imagens/carrinho.png" alt="" id="imgCarrinho">
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="azulEscuro">
+        <div id="divCima">
+            <div class="card cardPc">
+
+                <img src="../imagens/Phantom.jpg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title d-flex" id="descricao21">
+                        Teclado Mecanico Phantom, RGB, Switch Marrom, Preto, K629-RGB-PT-BROWN
+                    </h5>
+
+                    <div class="">
+                        <p class="card-text" id="preco21">
+                            <b>Preço: R$ 289,99</b>
+                        </p>
+
+                        <a href="#" onclick="adicionarProduto(21)"
+                            class="btn fundoVermelho branco d-flex justify-content-center botaoCarrinho">
+                            Adicionar ao carrinho
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card cardPc">
+
+                <img src="../imagens/APS Pro.jpg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title d-flex" id="descricao22">
+                        Teclado Mecanico APS Pro, RGB, Switch Marrom, Preto, K607P-KBS-PT-BROWN
+                    </h5>
+
+                    <div class="">
+                        <p class="card-text" id="preco22">
+                            <b>Preço: R$ 419,99</b>
+                        </p>
+
+                        <a href="#" onclick="adicionarProduto(22)"
+                            class="btn fundoVermelho branco d-flex justify-content-center botaoCarrinho">
+                            Adicionar ao carrinho
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card cardPc">
+
+                <img src="../imagens/ELF.jpg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title d-flex" id="descricao23">
+                        Teclado Mecanico ELF, RGB, Switch Melt Gold, Preto e Amarelo, K649PY-RGB-PT
+                    </h5>
+
+                    <div class="">
+                        <p class="card-text" id="preco23">
+                            <b>Preço: R$ 399,99</b>
+                        </p>
+
+                        <a href="#" onclick="adicionarProduto(23)"
+                            class="btn fundoVermelho branco d-flex justify-content-center botaoCarrinho">
+                            Adicionar ao carrinho
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card cardPc">
+
+                <img src="../imagens/Fizz.jpg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title d-flex" id="descricao24">
+                        Teclado Mecanico Gamer Fizz, RGB, Switch Crystal, Transparente, K617CTB-RGB
+                    </h5>
+
+                    <div class="">
+                        <p class="card-text" id="preco24">
+                            <b>Preço: R$ 314,99</b>
+                        </p>
+
+                        <a href="#" onclick="adicionarProduto(24)"
+                            class="btn fundoVermelho branco d-flex justify-content-center botaoCarrinho">
+                            Adicionar ao carrinho
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card cardPc">
+
+                <img src="../imagens/Ashe.jpg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title d-flex" id="descricao25">
+                        Teclado Mecanico Gamer Ashe, RGB, Switch Red, Branco, K626-KB-W-PT-RED
+                    </h5>
+
+                    <div class="">
+                        <p class="card-text" id="preco25">
+                            <b>Preço: R$ 279,99</b>
+                        </p>
+
+                        <a href="#" onclick="adicionarProduto(25)"
+                            class="btn fundoVermelho branco d-flex justify-content-center botaoCarrinho">
+                            Adicionar ao carrinho
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parte de Baixo -->
+
+        <div id="divBaixo">
+            <div class="card cardPc">
+
+                <img src="../imagens/Kludge R87.jpg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title d-flex" id="descricao26">
+                        Teclado Mecanico Kludge R87, RGB, ABNT2, Switch Red, Preto, RKR87-BLAC-H-POR
+                    </h5>
+
+                    <div class="">
+                        <p class="card-text" id="preco26">
+                            <b>Preço: R$ 314,99</b>
+                        </p>
+
+                        <a href="#" onclick="adicionarProduto(26)"
+                            class="btn fundoVermelho branco d-flex justify-content-center botaoCarrinho">
+                            Adicionar ao carrinho
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card cardPc">
+
+                <img src="../imagens/Sion.jpg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title d-flex" id="descricao27">
+                        Teclado Mecanico Gamer Sion, RGB, Switch Marrom, USB, Preto, K653-RGB
+                    </h5>
+
+                    <div class="">
+                        <p class="card-text" id="preco27">
+                            <b>Preço: R$ 365,99</b>
+                        </p>
+
+                        <a href="#" onclick="adicionarProduto(27)"
+                            class="btn fundoVermelho branco d-flex justify-content-center botaoCarrinho">
+                            Adicionar ao carrinho
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card cardPc">
+
+                <img src="../imagens/RT100.jpg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title d-flex" id="descricao28">
+                        Teclado Mecanico RT100, ARGB, Switch Wisteria Linear, Purple, RT100-PP-WSLN
+                    </h5>
+
+                    <div class="">
+                        <p class="card-text" id="preco28">
+                            <b>Preço: R$ 669,99</b>
+                        </p>
+
+                        <a href="#" onclick="adicionarProduto(28)"
+                            class="btn fundoVermelho branco d-flex justify-content-center botaoCarrinho">
+                            Adicionar ao carrinho
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card cardPc">
+
+                <img src="../imagens/K70 RGB PRO.jpg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title d-flex" id="descricao29">
+                        Teclado Mecanico K70 RGB PRO, Switch Cherry MX Red, Preto, CH-9109410-NA
+                    </h5>
+
+                    <div class="">
+                        <p class="card-text" id="preco29">
+                            <b>Preço: R$ 1.099,99</b>
+                        </p>
+
+                        <a href="#" onclick="adicionarProduto(29)"
+                            class="btn fundoVermelho branco d-flex justify-content-center botaoCarrinho">
+                            Adicionar ao carrinho
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card cardPc">
+
+                <img src="../imagens/GK75.jpg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title d-flex" id="descricao30">
+                        Teclado Mecanico GK75, RGB, Switch Optico Azul, Tigry, SKL-GK75-RGB-BL-TY
+                    </h5>
+
+                    <div class="">
+                        <p class="card-text" id="preco30">
+                            <b>Preço: R$ 409,99</b>
+                        </p>
+
+                        <a href="#" onclick="adicionarProduto(30)"
+                            class="btn fundoVermelho branco d-flex justify-content-center botaoCarrinho">
+                            Adicionar ao carrinho
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="d-flex" id="divPrincipalFooter">
+            <div class="divFooter">
+                <h4>
+                    <b>Contatos:</b>
+                </h4>
+
+                <p>Telefone: (11) 4002-8922</p>
+
+                <p>WhatsApp: (11) 98888-7777</p>
+
+                <p>E-mail: contato@techzone.com</p>
+            </div>
+
+            <div class="divFooter">
+                <h4>
+                    <b>Links:</b>
+                </h4>
+
+                <p>
+                    <a href="../index.html">Home</a>
+                </p>
+
+                <p>
+                    <a href="faleConosco.html">Fale conosco</a>
+                </p>
+
+                <p>
+                    <a href="cadastro.html">Dados da conta</a>
+                </p>
+            </div>
+
+            <div class="divFooter">
+                <h4>
+                    <b>Localização:</b>
+                </h4>
+
+                <p>Endereço: Rua da Inovação, 1234</p>
+
+                <p>Centro, São Paulo - SP</p>
+
+                <p>CEP: 01000-000</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INICIO BOOTSTRAP -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+        </script>
+
+    <!-- FINAL BOOTSTRAP -->
+
+    <script>
+        var itens = [];
+
+        function adicionarProduto(numero) {
+            var descricao = document.getElementById("descricao" + numero).innerHTML;
+            var preco = document.getElementById("preco" + numero).innerHTML;
+
+            localStorage.setItem("descricao" + numero, descricao);
+            localStorage.setItem("preco" + numero, preco);
+
+            itens.push(numero);
+
+            console.log("Número de itens:", itens.length);
+            console.log("Descrição:", descricao);
+            console.log("Preço:", preco);
+
+            document.getElementById("contador").innerHTML = itens.length;
+        }
+    </script>
+</body>
+
+</html>
